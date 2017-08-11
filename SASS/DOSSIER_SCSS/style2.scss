@@ -1,0 +1,32 @@
+
+.white{
+  background-color: white;
+  height: 10vh;
+}
+
+
+h2{
+  color: #D2ADCB;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1{
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+}
+
+@media only screen and (max-width: 768px){
+ .footer {
+    background-color: lightblue;
+  }
+}
+
+.cacher{
+  display: none
+}
+
+
+.montrer{
+  display: block;
+}
+

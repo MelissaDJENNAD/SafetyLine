@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--LIEN JQUERY-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--LIEN BOOTSTRAP-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!--MAPS-->
+
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key= AIzaSyAXRJe53WDzSvdQG7sfbOZwFerJpslKpeU '></script>
+    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=93f7fbe9cf3e9c19f171b05748641d2670bbca0b'></script>
+
+    <!--DATETIMEPICKER-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+
+    <!--LIEN STYLE-->
+
+    <link rel="stylesheet" href="SASS/DOSSIER_CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row white">
+        <div class="col-lg-3 logo">
+            <img src="image/NEW-logo-safetyline2.png">
+        </div>
+    </div>
+
+
+    <!--PANEL INFORMATION-->
+
+    <!--style="background-color: #323232;"-->
+
+
+    <!--MAIN-->
+
+
+    <div class="row" style="background-attachment: fixed;
+background-image: url(http://www.safety-line.fr/wp-content/uploads/2014/01/test-bg.jpg);">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading" style="height: 7vh; cursor: pointer">
+                <div class="col-xs-offset-3 col-lg-offset-5 col-lg-2" style="font-size: 3vh; font-family: 'Crete Round', serif;">Panel
+                    heading <i class="glyphicon glyphicon-resize-full" aria-hidden="true"></i>
+
+                </div>
+            </div>
+            <div class="panel-body"
+                 style="background-color: #323232; display: none; font-family: 'Saira Extra Condensed', sans-serif;">
+                <form>
+
+                    <div class="form-inline">
+                        <label for="panelType" style="color: #ffffff;">Type</label>
+                        <select class="form-control" id="panelType" style="width: 200px;  margin-right: 5vh;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <label for="panelStatus" style="color: #ffffff;">Status</label>
+                        <input type="text" class="form-control" id="panelStatus" placeholder="Type"
+                               style=" margin-right: 5vh;">
+                        <label for="panelResponsable" style="color: #ffffff;">Responsable</label>
+                        <input type="text" class="form-control" id="panelResponsable" placeholder="Date"
+                               style=" margin-right: 5vh;">
+                        <label for="panelSite" style="color: #ffffff;">Site</label>
+                        <input type="text" class="form-control" id="panelSite" placeholder="Time"
+                               style=" margin-right:5vh;">
+
+                    </div>
+                    <br>
+
+                    <div class="form-inline">
+
+                        <label for="panelReference" style="color: #ffffff;">Reference</label>
+                        <input type="text" class="form-control" id="panelReference" placeholder="Time"
+                               style="margin-right: 5vh">
+                        <label style="color: #ffffff;">Notify : </label>
+                        <label class="form-check-label" style="color: #ffffff;"> Yes
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                   value="option1">
+                        </label>
+                        <label class="form-check-label" style="color: #ffffff;"> No
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                   value="option2">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="color: #ffffff;"> Notify to</label>
+                        <textarea class="form-control" rows="3" placeholder="Note"></textarea>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <h1>Formulaire</h1>
+        </div>
+    </div>
+
+    <div class="row"
+         style="background-attachment: fixed;background-image: url(http://www.safety-line.fr/wp-content/uploads/2014/01/test-bg.jpg);">
+
+
+        <!--AIRCRAFT-->
+
+
+        <div class="col-lg-3">
+            <h2>Aircraft</h2>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputType">Type</label>
+                    <input type="text" class="form-control" id="exampleInputType" placeholder="Type">
+                </div>
+                <div class="form-group">
+                    <label for="datetimepicker10">DATE</label>
+                    <div class='input-group date' id='datetimepicker10'>
+                        <input type='text' class="form-control" placeholder="MM/DD/YYYY"/>
+                        <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="datetimepicker3">Time</label>
+                    <div class='input-group date' id='datetimepicker3'>
+
+                        <input type='text' class="form-control" placeholder="Hour"/>
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Departure</label>
+                    <select class="form-control" id="sel1" style="width: 200px;">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+
+        <!--WEATHER-->
+
+
+        <div class="col-lg-offset-1 col-lg-3">
+
+            <h2>Weather</h2>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputTemps">Temps</label>
+                    <input type="text" class="form-control" id="exampleInputTemps" placeholder="Temps">
+                </div>
+                <div class="form-group">
+
+                    <label for="exampleInputMeteo">Meteo</label>
+                    <input type="date" class="form-control" id="exampleInputMeteo" placeholder="Meteo">
+                </div>
+            </form>
+
+
+        </div>
+
+
+        <!--LOCALISATION-->
+
+
+        <div class="col-lg-offset-1 col-lg-3">
+
+            <h2>Localisation</h2>
+            <hr>
+
+
+            <form>
+                <div class="form-group">
+                    <label for="datetimepicker11">DATE</label>
+                    <div class='input-group date' id='datetimepicker11'>
+                        <input type='text' class="form-control" placeholder="MM/DD/YYYY"/>
+                        <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                </span>
+                    </div>
+
+                </div>
+                <div style='overflow:hidden;height:200px;width:290px;'>
+                    <div id='gmap_canvas' style='height:200px;width:290px;'>
+
+                    </div>
+                    <style>#gmap_canvas img{max-width:none!important;background:none!important}
+                    </style>
+                </div> <a href='https://addmap.net/'>how to add a google map to a website</a>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+    <!--FOOTER-->
+
+
+    <div class="row footer" style=" background-color: #202020;">
+        <div class="col-lg-offset-4 col-lg-5" style=" margin-top: 3vh; background-color: #202020">
+            <p><span style="color: #8C8989;">Copyright 2017 Safety-line | All Rights Reserved | </span><span
+                    style="color: #BFBFBF;">Mentions Légales</span></p>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+
+    <!--MAPS-->
+
+    function init_map(){
+        var myOptions = {
+            zoom:16,center:new google.maps.LatLng(48.84232080564015,2.2847451539672647),
+            mapTypeId: google.maps.MapTypeId.TERRAIN};
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,position: new google.maps.LatLng(48.84232080564015,2.2847451539672647)});
+        infowindow = new google.maps.InfoWindow({
+            content:'<strong>Safety- Line </strong><br>130 rue Lourmel <br>75 015  PARIS <br>'});
+        google.maps.event.addListener(marker, 'click', function(){
+            infowindow.open(map,marker);
+        });
+        infowindow.open(map,marker);
+    }google.maps.event.addDomListener(window, 'load', init_map);
+
+
+    $(function () {
+
+//        PANEL
+
+        $('.panel-heading').click(function () {
+            $('.panel-body').slideToggle('slow'),
+                $(this).find('i').toggleClass('glyphicon-resize-full')
+                    .toggleClass('glyphicon-resize-small');;
+
+        });
+
+
+//        ANIMATE.CSS
+
+        $('h2').addClass('animated fadeInUp');
+
+//        DATETIMEPICKER
+
+        $('#datetimepicker3').datetimepicker({
+            format: 'LT'
+        });
+        $('#datetimepicker10').datetimepicker({
+            viewMode: 'years',
+            format: 'MM/DD/YYYY'
+        });
+        $('#datetimepicker11').datetimepicker({
+            viewMode: 'years',
+            format: 'MM/DD/YYYY'
+        });
+    });
+
+
+</script>
+
+
+</body>
+</html>
